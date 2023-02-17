@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    box-sizing : border-box;
+    font-family: "Roboto", sans-serif;
+    padding    : 0;
+    margin     : 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin   : 0 auto;
+    padding  : 0 !important;
+}
+
+.home-header {
+    z-index         : 1000;
+    max-width       : 100%;
+    border-bottom   : 1px solid #ddd;
+    box-shadow      : 0 3px 10px rgba(0, 0, 0, 0.3);
+    position        : sticky;
+    top             : 0;
+    background-color: white;
+    color           : black
+}
+
+.home-header a {
+    text-decoration: none;
+    color          : inherit;
+}
+
+.relative {
+    position: relative;
+}
+
+.active {
+    position        : absolute;
+    background-color: orange;
+    top             : 10px;
+    left            : -2px;
+    border          : none;
+    height          : 4px;
+}
+
+.active-home {
+    width: 53px;
+}
+
+.active-bill {
+    width: 49px;
+}
+
+.home-header a:hover {
+    text-decoration: none;
+    color          : inherit;
+}
+
+.header-menu {
+    height         : 70px;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.header-menu-left {
+    width              : 80px;
+    height             : 100%;
+    background-image   : url("../img/Logo_NIKE.svg.png");
+    background-size    : contain;
+    background-position: left;
+    background-repeat  : no-repeat;
+}
+
+.header-menu-right {
+    display       : flex;
+    align-items   : center;
+    font-size     : 17px;
+    text-transform: uppercase;
+    font-weight   : 600;
+    gap           : 30px;
+}
+
+.cart-link {
+    position: relative;
+}
+
+.cart-icon {
+    font-size: 21px;
+    color    : #333;
+    padding  : 6px;
+}
+
+.cart-notice {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    position        : absolute;
+    top             : -5px;
+    right           : 0px;
+    border-radius   : 50%;
+    height          : 14px;
+    width           : 14px;
+    font-size       : 8px;
+    border          : 1px solid #3164f0;
+    background-color: white;
+    color           : #3164f0;
+}
+
+@media screen and (max-width: 592px) {
+
+    .contact,
+    .about {
+        display: none;
+    }
+
+}
